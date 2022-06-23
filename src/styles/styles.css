@@ -1,0 +1,216 @@
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+.centrado{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.centrado h1{
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+input{
+    background-color: #C0C0C0 !important;
+    border:#C0C0C0 !important;
+    border-radius: 0.5rem;
+    width: 15rem;
+    height: 2rem;
+}
+form{
+    background-color: #EBEBEB;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+label{
+    color: black;
+    font-size: 1.5rem;
+}
+.boton{
+    background-color: var(--azul-oscuro) !important;
+    border: var(--azul-oscuro);
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    transition-property: background-color;
+    transition-duration: .4s;
+    border-radius: 0.2rem;
+    color: var(--blanco);
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: var(--azul-claro) !important;
+}
+.sec-isq{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco);
+    padding-top: 4.9rem;
+}
+.overflow{
+    overflow: scroll;
+    height: 100vh;
+}
+/**************************** Layout *****************************/
+
+.cabecera h1{
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    font-size: 2.3rem;
+    background-color: var(--blanco);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.grid-columnas{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    gap: 1rem;
+}
+.navegacion{
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.navegacion a{
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+.espacio-enlaces{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.espacio-enlaces:hover{
+    background-color: var(--gris);
+}
+.color1{
+    background-color: var(--gris);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: .4s;
+}
+.color1:hover{
+    background-color: var(--gris);
+}
+.color2{
+    background-color: var(--blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: .4s;
+}
+.color2:hover{
+    background-color: var(--gris);
+}
+
+/* ************************** componente FormularioInventario ************************ */
+
+.grid-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    margin: 7rem 2rem 0rem 1rem;
+}
+.izq-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.formulario{
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    padding-right: 5rem;
+}
+.formulario label{
+    font-size: 1rem;
+}
+.field{
+    outline: 0;
+    width: 100%;
+    border-radius: 0.3rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+}
+.espacio-inputs{
+    margin-top: 1rem;
+}
+.error{
+    background-color: #F05D5E;
+    color: var(--blanco);
+    text-align: center;
+    padding: 0.5rem;
+}
+.boton-centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/**************** componente  ConsultarInventario ***************** */
+
+.buscar-prod{
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 2rem 2rem 0rem 1rem;
+}
+.grid-consultar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.grid-consultar input{
+    width: 100%;
+    outline: 0;
+    font-size: 1rem;
+}
+.grid-consultar label{
+    font-size: 1rem;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align:left;
+}
+td, th{
+    border-bottom: 1px solid var(--gris);
+    height: 2rem;
+}
+
+/**************** componente  TotalProductos ***************** */
+
+.id-table{
+    width: 5%;
+}
+.buscar-prod h2{
+    text-align: center;
+}
+.buscar-prod{
+    margin-bottom: 2rem;
+}

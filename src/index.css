@@ -1,0 +1,23 @@
+:root {
+    --amarillo: #FF6700;
+    --blanco: #EBEBEB;
+    --gris: #C0C0C0;
+    --azul-claro: #3A6EA5;
+    --azul-oscuro: #004E98;
+  }
+html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    font-family:'Outfit', sans-serif;
+    background-color: #C0C0C0;
+    margin: 0;
+}
+h1,h2,h3,h4,p,a{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
